@@ -2,7 +2,7 @@
   "name": "wordpress_ui_automation",
   "description": "UI Automation script for wordpress",
   "scripts": {
-    "CustomerLite_Regression_Headless": ".\\node_modules\\.bin\\cypress run --spec  cypress//integration//testscripts//WordPressSuite//WordPress_VerifyMyProfile.js"
+    "wordpress_suite": ".\\node_modules\\.bin\\cypress run --spec  cypress//integration//testscripts//WordPressSuite//WordPress_VerifyMyProfile.js"
   },
   "dependencies": {
     "axios": "^0.21.0",

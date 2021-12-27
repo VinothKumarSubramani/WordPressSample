@@ -1,12 +1,6 @@
 node_modules/
 .cache/
 .history/
-dist/
-cypress/videos/
-
 yarn-error.log
 debug.log
-
 .env.local
-report/protractor
-cypress/reports

@@ -24,7 +24,7 @@
         "videosFolder": "cypress/reports/videos",
         "env": {
                 "WORDPRESS_URL": "https://wordpress.com/me",
-                "USERNAME": "vinothtest2016@gmail.com",
-                "PASSWORD":"Vinoth@123"
+                "USERNAME": "vinothtest1189@gmail.com",
+                "PASSWORD":"vinoth@2021"
         }
 }

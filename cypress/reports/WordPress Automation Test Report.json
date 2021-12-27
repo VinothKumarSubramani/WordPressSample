@@ -1,0 +1,217 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 3,
+    "pending": 0,
+    "failures": 3,
+    "start": "2021-12-27T07:41:26.894Z",
+    "end": "2021-12-27T07:42:59.407Z",
+    "duration": 92513,
+    "testsRegistered": 6,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5224afd0-0956-4a61-90d2-07a0158dac3a",
+      "title": "",
+      "fullFile": "cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js",
+      "file": "cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d4185d2c-c740-4245-b5cc-5887b79bd9b9",
+          "title": "MY Profile Page Validations",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login as valid user",
+              "fullTitle": "MY Profile Page Validations login as valid user",
+              "timedOut": null,
+              "duration": 18355,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  \"LAUNCH URL WORDPRESS\",\n  \"LOGIN TO WORDPRESS\",\n  \"NAVIGATE TO MY PROFILE SECTION\"\n]",
+              "code": "",
+              "err": {},
+              "uuid": "d51ff9ae-d674-4750-a0c4-1feffa16e77a",
+              "parentUUID": "d4185d2c-c740-4245-b5cc-5887b79bd9b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Update the Profile",
+              "fullTitle": "MY Profile Page Validations Update the Profile",
+              "timedOut": null,
+              "duration": 3527,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"UPDATE PROFILE\"",
+              "code": "",
+              "err": {},
+              "uuid": "b63a605b-671f-47c8-ba62-7e351efed67d",
+              "parentUUID": "d4185d2c-c740-4245-b5cc-5887b79bd9b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logout from application",
+              "fullTitle": "MY Profile Page Validations Logout from application",
+              "timedOut": null,
+              "duration": 9028,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"LOGOUT FROM THE APPLICATION\"",
+              "code": "",
+              "err": {},
+              "uuid": "0aaecb08-453a-47ac-b33a-9d61f433704b",
+              "parentUUID": "d4185d2c-c740-4245-b5cc-5887b79bd9b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login and Validate Updated Profile",
+              "fullTitle": "MY Profile Page Validations Login and Validate Updated Profile",
+              "timedOut": null,
+              "duration": 22468,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"VERIFY WHETHER PROFILE IS DISPLAYED WITH UPDATED DETAILS\"",
+              "code": "",
+              "err": {
+                "message": "AssertionError: Timed out retrying: expected '<input#first_name.form-text-input>' to have attribute 'value' with the value 'Vinoth hcl', but the value was ''",
+                "estack": "AssertionError: Timed out retrying: expected '<input#first_name.form-text-input>' to have attribute 'value' with the value 'Vinoth hcl', but the value was ''\n    at MyProfilePage.verifyFirstName (https://wordpress.com/__cypress/tests?p=cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js:692:40)\n    at MyProfilePage.validateProfile (https://wordpress.com/__cypress/tests?p=cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js:684:12)\n    at Context.eval (https://wordpress.com/__cypress/tests?p=cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js:356:19)",
+                "diff": "+ 'Vinoth hcl'\n"
+              },
+              "uuid": "41c49133-15e2-47e2-b8db-e1f41b3ad48f",
+              "parentUUID": "d4185d2c-c740-4245-b5cc-5887b79bd9b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add URL under profile links and validate",
+              "fullTitle": "MY Profile Page Validations Add URL under profile links and validate",
+              "timedOut": null,
+              "duration": 21204,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"ADD LINK UNDER PROFILE LINK AND VALIDATE WHETHER SITE IS ADDED\"",
+              "code": "",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `(//span[@class=\"profile-link__url\"])[last()]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `(//span[@class=\"profile-link__url\"])[last()]`, but never found it.\n    at storeXpathValue (https://wordpress.com/__cypress/tests?p=cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js:461:6)\n    at MyProfilePage.verifyAddedSite (https://wordpress.com/__cypress/tests?p=cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js:765:45)\n    at MyProfilePage.addLink (https://wordpress.com/__cypress/tests?p=cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js:735:12)\n    at Context.eval (https://wordpress.com/__cypress/tests?p=cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js:360:19)",
+                "diff": null
+              },
+              "uuid": "90d36f9d-da35-4817-a78e-755e17f8d745",
+              "parentUUID": "d4185d2c-c740-4245-b5cc-5887b79bd9b9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Remove links under profile links and validate",
+              "fullTitle": "MY Profile Page Validations Remove links under profile links and validate",
+              "timedOut": null,
+              "duration": 15070,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"REMOVE LINK UNDER PROFILE LINK AND VALIDATE WHETHER SITE IS ADDED\"",
+              "code": "",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: ` //span[.=\"vinothhcl.com\"]/../..//button[@class=\"button profile-link__remove is-borderless\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: ` //span[.=\"vinothhcl.com\"]/../..//button[@class=\"button profile-link__remove is-borderless\"]`, but never found it.\n    at MyProfilePage.removeSiteLink (https://wordpress.com/__cypress/tests?p=cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js:782:10)\n    at Context.eval (https://wordpress.com/__cypress/tests?p=cypress\\integration\\testscripts\\WordPressSuite\\WordPress_VerifyMyProfile.js:364:19)",
+                "diff": null
+              },
+              "uuid": "d349bf44-a7a0-4e4a-9a30-a0209e983ac9",
+              "parentUUID": "d4185d2c-c740-4245-b5cc-5887b79bd9b9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d51ff9ae-d674-4750-a0c4-1feffa16e77a",
+            "b63a605b-671f-47c8-ba62-7e351efed67d",
+            "0aaecb08-453a-47ac-b33a-9d61f433704b"
+          ],
+          "failures": [
+            "41c49133-15e2-47e2-b8db-e1f41b3ad48f",
+            "90d36f9d-da35-4817-a78e-755e17f8d745",
+            "d349bf44-a7a0-4e4a-9a30-a0209e983ac9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 89652,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "WordPress Automation Test Report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "WordPress Automation Test Report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "code": false,
+        "charts": true,
+        "inline": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
