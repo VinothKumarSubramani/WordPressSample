@@ -1,0 +1,1 @@
+.\\node_modules\\.bin\\cypress run --spec cypress\\integration\\testscripts\\SAPOrder\\Place_Order_SAP.js --browser chrome

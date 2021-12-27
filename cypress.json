@@ -1,0 +1,30 @@
+{
+        "chromeWebSecurity": false,
+        "defaultCommandTimeout": 15000,
+        "execTimeout": 60000,
+        "pageLoadTimeout": 180000,
+        "requestTimeout": 90000,
+        "responseTimeout": 80000,
+        "screenshotOnRunFailure": false,
+        "reporter": "mochawesome",
+        "reporterOptions": {
+                "reportDir": "cypress/reports",
+                "reportFilename": "WordPress Automation Test Report",
+                "overwrite": false,
+                "html": true,
+                "json": true,
+                "code": false,
+                "charts": true,
+                "inline": true
+        },
+        "screenshotsFolder": "cypress/reports/screenshots",
+        "video": true,
+        "fixturesFolder": "cypress/fixtures",
+        "integrationFolder": "cypress/integration/testscripts/WordPressSuite",
+        "videosFolder": "cypress/reports/videos",
+        "env": {
+                "WORDPRESS_URL": "https://wordpress.com/me",
+                "USERNAME": "vinothtest2016@gmail.com",
+                "PASSWORD":"Vinoth@123"
+        }
+}

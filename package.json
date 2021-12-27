@@ -1,0 +1,29 @@
+{
+  "name": "wordpress_ui_automation",
+  "description": "UI Automation script for wordpress",
+  "scripts": {
+    "CustomerLite_Regression_Headless": ".\\node_modules\\.bin\\cypress run --spec  cypress//integration//testscripts//WordPressSuite//WordPress_VerifyMyProfile.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "convert-excel-to-json": "^1.7.0",
+    "lodash": "^4.17.21",
+    "node-xlsx": "^0.17.1",
+    "package.json": "^2.0.1",
+    "soft-assert": "^0.2.3",
+    "xlsx": "^0.17.1"
+  },
+  "devDependencies": {
+    "cypress": "^6.1.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^1.6.1",
+    "mocha-test-context": "^1.0.0",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0"
+  },
+  "peerDependencies": {
+    "cypress": "^6.1.0"
+  },
+  "author": "Vinoth kumar - vinoth.kumars@hcl.com"
+}
